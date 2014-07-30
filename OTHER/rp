@@ -11,7 +11,7 @@ sudo yum install bison
 sudo yum install flex
 sudo yum install gmp
 sudo yum install mpfr
-sudo you install mpc
+sudo yom install mpc
 echo "DONE"
 }
 func_aptitude ()
