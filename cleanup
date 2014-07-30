@@ -1,0 +1,4 @@
+rm -r build
+mkdir build
+rm myos.iso
+rm myos.bin
