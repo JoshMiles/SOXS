@@ -29,8 +29,7 @@ cd toolchain
 echo "====================================="
 echo "Downloading default toolchain scripts...
 echo "====================================="
-wget https://raw.githubusercontent.com/JoshMiles/SOXS/master/OTHER/aptitude
-wget https://raw.githubusercontent.com/JoshMiles/SOXS/master/OTHER/yum
+wget https://raw.githubusercontent.com/JoshMiles/SOXS/master/OTHER/rp
 wget https://raw.githubusercontent.com/JoshMiles/SOXS/master/OTHER/gcc
 
 # Make the scripts executable
@@ -38,13 +37,19 @@ wget https://raw.githubusercontent.com/JoshMiles/SOXS/master/OTHER/gcc
 echo "====================================="
 echo "Applying chmod...
 echo "====================================="
-chmod a+x aptitude
-chmod a+x yum
+chmod a+x rp
 chmod a+x gcc
+
+# Installing dependancies
+
+echo "====================================="
+echo "Installing required packages..."
+echo "====================================="
+bash rp
 
 # Launch the GCC script
 
 echo "====================================="
 echo "Finished setup, launching gcc script..."
 echo "====================================="
-bash gcc
+#bash gcc
