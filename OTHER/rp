@@ -12,7 +12,6 @@ sudo yum install flex
 sudo yum install gmp
 sudo yum install mpfr
 sudo yum install mpc
-sudo yum install lbgcc
 echo "DONE"
 }
 func_aptitude ()
@@ -25,7 +24,6 @@ sudo apt-get install flex
 sudo apt-get install gmp
 sudo apt-get install mpfr
 sudo apt-get intall mpc
-sudo apt-get install lbgcc
 echo "DONE"
 }
 
