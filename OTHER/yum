@@ -1,4 +1,7 @@
 #!/bin/bash
+# Created for Emily's tutorial at int0x10
+# YUM version
+sudo yum install wget
 sudo yum install gcc-c++
 sudo yum install make
 sudo yum install bison
