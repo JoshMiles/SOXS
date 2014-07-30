@@ -1,0 +1,11 @@
+#!/bin/bash
+# Created for Emily's tutorial at int0x10
+# Aptitude version
+sudo apt-get install g++
+sudo apt-get install make
+sudo apt-get install bison
+sudo apt-get install flex
+sudo apt-get install gmp
+sudo apt-get install mpfr
+sudo apt-get intall mpc
+echo "DONE"
