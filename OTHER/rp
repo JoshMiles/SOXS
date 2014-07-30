@@ -32,7 +32,7 @@ haveProg() {
 }
 
 if haveProg apt-get ; then func_aptitude
-elif haveProg yum ; then fun_yum
+elif haveProg yum ; then func_yum
 else
     echo 'No package manager found!'
     exit 2
