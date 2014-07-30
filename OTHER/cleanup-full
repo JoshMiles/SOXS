@@ -6,4 +6,6 @@ rm -r build
 rm -r cross-compiler-setup
 rm -r src
 rm -r toolchain
+rm cleanup-full
 echo "Done."
+
