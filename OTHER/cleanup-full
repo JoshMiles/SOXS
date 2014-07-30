@@ -1,7 +1,6 @@
 #!/bin/bash
 # Full cleanup - leaves just ./setup
 echo "Performing full cleanup..."
-cd ..
 rm -r build
 rm -r cross-compiler-setup
 rm -r src
