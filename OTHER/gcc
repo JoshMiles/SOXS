@@ -1,0 +1,31 @@
+#!/bin/bash
+# GCC script
+# This script will setup your cross compiler for you
+# Created for Emily's tutorial at int0x10
+
+# Download the tars
+clear
+echo "===================================="
+echo "Downloading required archives..."
+echo "===================================="
+cd cross-compiler-setup
+cd source_code
+wget ftp://ftp.gnu.org/gnu/binutils/binutils-2.24.tar.gz
+wget ftp://ftp.gnu.org/gnu/gcc/gcc-4.9.1/gcc-4.9.1.tar.gz
+wget https://gmplib.org/download/gmp/gmp-6.0.0a.tar.lz
+wget http://www.mpfr.org/mpfr-current/mpfr-3.1.2.tar.gz
+wget ftp://ftp.gnu.org/gnu/mpc/mpc-1.0.2.tar.gz
+echo "====================================="
+echo "Installing texinfo..."
+echo "====================================="
+
+haveProg() {
+    [ -x "$(which $1)" ]
+}
+
+if haveProg apt-get ; then func_aptitude
+elif haveProg yum ; then func_yum
+else
+    echo 'This script only uses yum and aptitude.'
+    exit 2
+fi

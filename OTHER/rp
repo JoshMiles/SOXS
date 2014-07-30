@@ -1,0 +1,38 @@
+#!/bin/bash
+# Created for Emily's tutorial at int0x10
+
+haveProg() {
+    [ -x "$(which $1)" ]
+}
+
+if haveProg apt-get ; then func_aptitude
+elif haveProg yum ; then func_yum
+else
+    echo 'No package manager found!'
+    exit 2
+fi
+func_yum(){
+sudo yum install wget
+sudo yum install gcc-c++
+sudo yum install make
+sudo yum install bison
+sudo yum install flex
+sudo yum install gmp
+sudo yum install mpfr
+sudo you install mpc
+echo "DONE"
+}
+func_aptitude(){
+
+sudo apt-get install wget
+sudo apt-get install g++
+sudo apt-get install make
+sudo apt-get install bison
+sudo apt-get install flex
+sudo apt-get install gmp
+sudo apt-get install mpfr
+sudo apt-get intall mpc
+echo "DONE"
+
+
+}
