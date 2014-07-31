@@ -1,9 +1,14 @@
 SOXS
 ====
+SOXS is a utility created for LHC. SOXS will automatically setup the LHC environment for you. It will create the cross-compiler and give you the LHC toolchain - it also installs the required packages.
 
-Basically a piss around, ngl
+How to get SOXS
+====
+You do not need to download this repo to use SOXS. 
+You simply have to download the setup script. Right click > save as on the following link to download the script.
+https://raw.githubusercontent.com/JoshMiles/SOXS/master/OTHER/setup
+Place the script in a new directory (perhaps $HOME/LHC) and then run it using
+```
+$ bash setup
+```
 
-The problem
-
-There are currently two floppydisk img files in the root
-of this git, they both should contain grub.
