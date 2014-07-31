@@ -142,3 +142,5 @@ echo "Checking version..."
 echo "=================================="
 $HOME/opt/cross/bin/$TARGET-gcc --version
 echo "DONE"
+
+bash post_gcc

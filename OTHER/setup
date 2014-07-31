@@ -15,30 +15,36 @@ clear
 echo "====================================="
 echo "Setting up the directory structure..."
 echo "====================================="
-md src
-md build
-md toolchain
-md cross-compiler-setup
+mkd src
+mkd build
+mkd toolchain
+mkd cross-compiler-setup
 cd cross-compiler-setup
-md source_code
+mkd source_code
 cd ..
 cd toolchain
 
 # Download some useful toolchain scripts
 
 echo "====================================="
-echo "Downloading default toolchain scripts...
+echo "Downloading default toolchain scripts..."
 echo "====================================="
 wget https://raw.githubusercontent.com/JoshMiles/SOXS/master/OTHER/rp
 wget https://raw.githubusercontent.com/JoshMiles/SOXS/master/OTHER/gcc
-
+cd ..
+wget https://raw.githubusercontent.com/JoshMiles/SOXS/master/OTHER/cleanup-full
+cd toolchain
 # Make the scripts executable
 
 echo "====================================="
-echo "Applying chmod...
+echo "Applying chmod..."
 echo "====================================="
-chmod a+x rp
-chmod a+x gcc
+chmod a+x *
+cd ..
+chmod a+x cleanup-full
+chmod a+x setup
+echo "Done"
+cd toolchain
 
 # Installing dependancies
 
@@ -52,4 +58,4 @@ bash rp
 echo "====================================="
 echo "Finished setup, launching gcc script..."
 echo "====================================="
-#bash gcc
+bash gcc

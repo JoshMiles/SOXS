@@ -1,0 +1,16 @@
+#!/bin/bash
+bash toolchain/prep
+echo "Assembling boot.s"
+i686-elf-as src/boot.s -o build/boot.o
+echo "Compiling Kernel.c"
+i686-elf-gcc -c src/kernel.c -o build/kernel.o -std=gnu99 -ffreestanding -O2 -Wall -Wextra
+echo "Linking..."
+i686-elf-gcc -T linker.ld -o build/myos.bin -ffreestanding -O2 -nostdlib build/boot.o build/kernel.o -lgcc
+echo "Creating ISO..."
+mkdir -p isodir
+mkdir -p isodir/boot
+cp build/myos.bin isodir/boot/myos.bin
+mkdir -p isodir/boot/grub
+cp grub.cfg isodir/boot/grub/grub.cfg
+grub2-mkrescue -o OS.iso isodir
+echo "DONE"
