@@ -1,4 +1,11 @@
 #!/bin/bash
+if [ "$1" = "-r" ]; then
+   # reset
+   cd toolchain/versionmanager
+   bash manager -c
+   cd ..
+   cd ..
+fi
 rm -r build
 rm -r isodir
 mkdir build
