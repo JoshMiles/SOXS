@@ -1,0 +1,6 @@
+#!/bin/bash
+rm -r build
+rm -r isodir
+mkdir build
+rm OS.iso
+echo "DONE"

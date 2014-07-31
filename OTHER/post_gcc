@@ -3,7 +3,20 @@ echo "============================"
 echo "Downloading final scripts..."
 echo "============================"
 wget https://raw.githubusercontent.com/JoshMiles/SOXS/master/OTHER/prep
+chmod a+x prep
 cd ..
 wget https://raw.githubusercontent.com/JoshMiles/SOXS/master/OTHER/run
 wget https://raw.githubusercontent.com/JoshMiles/SOXS/master/OTHER/kbuild
+wget https://raw.githubusercontent.com/JoshMiles/SOXS/master/OTHER/linker.ld
+wget https://raw.githubusercontent.com/JoshMiles/SOXS/master/OTHER/grub.cfg
+wget https://raw.githubusercontent.com/JoshMiles/SOXS/master/OTHER/cleanup
+chmod a+x run
+chmod a+x kbuild
+chmod a+x cleanup
+echo "==========================="
+echo "Downloading example kernel..."
+echo "==========================="
+cd src
+wget https://raw.githubusercontent.com/JoshMiles/SOXS/master/OTHER/example/kernel.c
+wget https://raw.githubusercontent.com/JoshMiles/SOXS/master/OTHER/example/boot.s
 echo "DONE"
