@@ -13,5 +13,6 @@ Place the script in a new directory (perhaps `$HOME/LHC`) and then run it using
 $ bash setup
 ```
 
-**WARNING: The setup script can take from twenty minutes to an hour to complete as it compiles and builds GCC from source code to create your i686-elf cross compiler! KEEP YOUR DEVICE PLUGGED IN AND DO NOT TURN IT OFF DURING SETUP.**
+> **WARNING: The setup script can take from twenty minutes to an hour to complete as it compiles and builds GCC from source code to create your i686-elf cross compiler! KEEP YOUR DEVICE PLUGGED IN AND DO NOT TURN IT OFF DURING SETUP.**
+
 If you wish to cancel the setup, press ctrl+c.
