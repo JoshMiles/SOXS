@@ -31,6 +31,7 @@ echo "Downloading default toolchain scripts..."
 echo "====================================="
 wget https://raw.githubusercontent.com/JoshMiles/SOXS/master/OTHER/rp
 wget https://raw.githubusercontent.com/JoshMiles/SOXS/master/OTHER/gcc
+wget https://raw.githubusercontent.com/JoshMiles/SOXS/master/OTHER/post_gcc
 cd ..
 wget https://raw.githubusercontent.com/JoshMiles/SOXS/master/OTHER/cleanup-full
 cd toolchain
