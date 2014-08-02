@@ -24,11 +24,15 @@ wget https://raw.githubusercontent.com/JoshMiles/SOXS/master/OTHER/versionmanage
 cd ..
 cd ..
 echo "==========================="
-echo "Downloading example kernel..."
+echo "Downloading HADRON..."
 echo "==========================="
 cd src
 wget https://raw.githubusercontent.com/JoshMiles/SOXS/master/OTHER/example/kernel.c
 wget https://raw.githubusercontent.com/JoshMiles/SOXS/master/OTHER/example/boot.s
+wget https://raw.githubusercontent.com/JoshMiles/SOXS/master/OTHER/example/terminal.h
+wget https://raw.githubusercontent.com/JoshMiles/SOXS/master/OTHER/example/stdio.h
+
+
 echo "==========================="
 echo "Configure LHC..."
 echo "==========================="

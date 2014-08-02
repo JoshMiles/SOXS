@@ -1,4 +1,11 @@
 #!/bin/bash
+
+errorlist=""
+error()
+{
+	errorlist="$errorlist $1"
+}
+
 echo "Cleaning up..."
 bash cleanup
 bash toolchain/prep
@@ -25,3 +32,4 @@ cp grub.cfg isodir/boot/grub/grub.cfg
 osname=$(head -n 1 os.cfg)
 grub2-mkrescue -o $osname.iso isodir
 echo "DONE"
+echo $errorlist

@@ -12,6 +12,10 @@ sudo yum install flex
 sudo yum install gmp
 sudo yum install mpfr
 sudo yum install mpc
+sudo yum install mono
+sudo yum install qemu
+sudo yum install git
+sudo yum install xorriso
 echo "DONE"
 }
 func_aptitude ()
@@ -24,6 +28,10 @@ sudo apt-get install flex
 sudo apt-get install gmp
 sudo apt-get install mpfr
 sudo apt-get intall mpc
+sudo apt-get install mono
+sudo apt-get install qemu
+sudo apt-get install git
+sudo apt-get install xorriso
 echo "DONE"
 }
 
